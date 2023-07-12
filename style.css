@@ -1,0 +1,287 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+ }
+
+ body {
+    font-family: 'Inter Tight', sans-serif;
+    background-color: #EBEEF0;
+ }
+
+ header {
+    background-color: #A9BBD0;
+    text-align: center;
+ }
+
+main {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    gap: 50px;
+    margin-top: 50px;
+}
+
+
+
+
+
+
+#info {
+    background: #D9D9D9;
+    border: 1px solid #DDDDDD;
+    border-radius: 5px 5px 0px 0px;
+    text-align: center;
+    height: 30px;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+}
+
+#info p {
+    font-size: 16px;
+}
+
+
+
+.wrapper {
+    display: flex;
+    flex-direction: column;
+    gap: 4px;
+}
+
+label, button{
+    font-family: 'Inter Tight', sans-serif;
+}
+
+input{
+    width: 240px;
+    height: 35px;
+    background: #EBEEF0;
+    border: 1px solid #DDDDDD;
+    border-radius: 5px;
+    padding-left: 5px;
+}
+
+label {
+    margin-left: 1px;
+    font-weight: bold;
+}
+
+input:focus{
+    outline: none;
+}
+
+.game {
+  display: grid;
+  grid-template-columns: 1fr 1fr 1fr;
+}
+
+.game button {
+  width: 100px;
+  height: 100px;
+  margin: 5px;
+  cursor: pointer;
+  font-size: 50px;
+  background: #f7f7f7;
+}
+
+.card:hover {
+  background-color: #17a2b8!important;
+  color: white;
+  box-shadow: 10px 5px 5px black;
+}
+.card {
+  cursor: pointer;
+  max-width: 600px;
+}
+
+
+
+main{
+    background-color: #DDDDDD;
+    margin-top: 0px;
+    min-height: 150%;
+    padding-left: 15%;
+    padding-right: 15%;
+    
+}
+article{
+padding:10%;
+background-color: #DDDDDD;
+}
+
+footer{
+    padding:10px 5% 10px 100px;
+    height: 40px;
+    background-color: #808080;
+    text-align: right;
+    position: relative;
+    bottom: 0;    
+    left: 0;
+    width: 100%;
+}
+
+
+nav > img{
+  height: 40px;
+  padding: 2px;
+  margin-right: 10px;
+}
+
+article > figure{
+  float: right;
+  display: inline;
+}
+article > p{
+  text-indent: 50px;
+  margin-bottom: 0;
+  margin-bottom: 2em;
+  line-height:30px }
+
+
+
+article > figure > img{
+ 
+}
+
+#score {
+    text-align: center;
+    margin-bottom: 20px;
+  }
+  
+  .score-item {
+    margin-bottom: 10px;
+  }
+  
+  .score-item span {
+    font-weight: bold;
+  }
+  
+  .score-item::before {
+    content: "";
+    display: inline-block;
+    width: 10px;
+    height: 10px;
+    border-radius: 50%;
+    margin-right: 5px;
+  }
+  
+  #player1::before {
+    background-color: #FF0000;
+  }
+  
+  #player2::before {
+    background-color: #0000FF;
+  }
+
+#section1{
+ 
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+
+}
+#section2{
+   
+    width: 300px;
+    float: left;
+    background-color: aqua;
+
+}
+.section3{
+    margin-right: 20%;
+
+}
+
+article>header{
+    font-style: initial;
+    font-size:larger;
+    text-align: left;
+    margin-bottom: 50px;
+    background-color: #DDDDDD;
+    font-weight:bold;
+
+}
+article>figure{
+    margin: 15px;
+    padding: 0px;
+}
+article>figure>figcaption{
+    padding-right: 5px;
+    text-align: right;
+    margin: 0px;
+    font-size: 10pt;
+    font-style: italic;
+}
+
+article>footer{
+    background-color: #DDDDDD;
+}
+
+article>h5,h6{
+    margin-top: 10px;
+    margin-bottom: 10px;
+}
+
+article > ul, ol{margin-left: 35px;}
+
+form {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    gap: 26px;
+    margin-top: 26px;
+}
+
+.dica {
+   margin-top:30px;
+   margin-bottom:30px;
+    justify-content: center;
+    display: flex;
+flex-direction: row;
+justify-content: center;
+align-items: center;
+    
+}
+.dica-formulario {
+    background-color: whitesmoke;    
+    display: inline;
+    padding: 30px;
+    border: 2px;
+    border-radius: 10%;
+width: 360px;}
+
+.dica-formulario >  button {
+    background-color: lightgray; 
+    border: none;
+     padding: 15px 32px;
+    text-align: center;
+    text-decoration: none;
+    display: inline-block;
+    font-size: 16px;   
+    width:300px 
+  }
+
+  
+  .dica-formulario >  input {
+    background-color: lightgray;
+        width: 300px;}
+  .dica-formulario >  textarea {
+    background-color: lightgray; 
+    width: 300px;}
+.dica-formulario > label{
+    margin-top: 10px;
+}
+
+section{
+    margin-top: 0px;
+    margin-bottom: 0px;
+}
+
+.player-x {
+    color: red;
+  }
+  
+.player-o {
+color: blue;
+}

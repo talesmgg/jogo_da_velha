@@ -1,0 +1,111 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+   <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.2.1/jquery.min.js">
+  </script>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Jogo da Velha</title>
+<link  rel="stylesheet"  href="https://stackpath.bootstrapcdn.com/bootstrap/4.1.3/css/bootstrap.min.css"  integrity="sha384-MCw98/SFnGE8fJT3GXwEOngsV7Zt27NXFoaoApmYm81iuXoPkFOJwJ8ERdknLPMO"  crossorigin="anonymous">
+
+    <link rel="stylesheet" href="style.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0-beta3/css/all.min.css">
+    <link href="https://fonts.googleapis.com/css2?family=Inter+Tight:wght@300;400;500;700&family=Poppins:wght@400;500;700&display=swap" rel="stylesheet">
+</head>
+<body>
+
+
+  <nav class="navbar navbar-expand-lg navbar-dark bg-dark navbar-fixed-top">
+    <img src="images/logo-ufba-compactado.png">
+    <a class="navbar-brand" href="./index.html">Jogo da Velha</a>
+    <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarNav"
+      aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
+      <span class="navbar-toggler-icon"></span>
+    </button>
+    <div class="collapse navbar-collapse" id="navbarNav">
+      <ul class="navbar-nav">
+        <li class="nav-item">
+          <a class="nav-link" href="./historia.html" data-ajax="true">História</a>
+        </li>
+        <li class="nav-item">
+          <a class="nav-link" href="./dicas_jogo.html" data-ajax="true">Dica de jogadas</a>
+        </li>
+        <li class="nav-item">
+          <a class="nav-link" href="https://github.com" target="_blank">
+            <i class="fab fa-github"></i>
+          </a>
+        </li>
+     
+      </ul>
+    </div>
+  </nav>
+
+
+    <main>
+  <section id="section1">
+
+    <article>
+      <figure></figure>
+      <header><p>Regras</p></header>
+      <ul>     
+        <li>O tabuleiro  é uma matriz  de três linhas por três colunas;</li>
+        <li>Dois jogadores escolhem uma marcação cada um, geralmente um círculo (O) e um xis (X);</li>
+        <li>Os jogadores jogam alternadamente, uma marcação por vez, numa lacuna que esteja vazia;</li>
+        <li>O objectivo é conseguir três círculos ou três xis em linha, quer horizontal, vertical ou diagonal , e ao mesmo tempo, quando possível, impedir o adversário de ganhar na próxima jogada;</li>
+        <li>Quando um jogador conquista o objetivo, costuma-se riscar os três símbolos.</li>
+        
+      </ul>
+    </article>
+
+    <article>
+      <div id="score">
+        <h2>Jogo</h2>
+        <div id="player1" class="score-item">
+          Jogador X: <span id="player1-score">0</span>
+        </div>
+        <div id="player2" class="score-item">
+          Jogador O: <span id="player2-score">0</span>
+        </div>
+      </div>
+      <div class="game">
+      <button data-i="1"></button>
+      <button data-i="2"></button>
+      <button data-i="3"></button>
+      <button data-i="4"></button>
+      <button data-i="5"></button>
+      <button data-i="6"></button>
+      <button data-i="7"></button>
+      <button data-i="8"></button>
+      <button data-i="9"></button>
+    </div>
+
+      <div id="game">
+      <footer><h6 class="currentPlayer"></h6></footer>
+    </article>
+    
+   
+    
+
+
+
+  </section>
+  </main>
+ <script src="script.js"></script>
+ <footer> Trabalho desenvolvido para o componente curricular de Sistemas <i>Web</i> </footer>
+
+ <audio id="clickSound">
+  <source src="click_sound.mp3" type="audio/mpeg">
+  </audio>
+
+  <audio id="winSound">
+    <source src=".\song\ganhou_sound.mp3" type="audio/mpeg">
+  </audio>
+
+  <audio id="drawSound">
+    <source src=".\song\velha_sound.mp3" type="audio/mpeg">
+  </audio>
+
+</body>
+</html>

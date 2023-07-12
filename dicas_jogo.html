@@ -1,0 +1,126 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+   <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.2.1/jquery.min.js">
+  </script>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Login</title>
+<link  rel="stylesheet"  href="https://stackpath.bootstrapcdn.com/bootstrap/4.1.3/css/bootstrap.min.css"  integrity="sha384-MCw98/SFnGE8fJT3GXwEOngsV7Zt27NXFoaoApmYm81iuXoPkFOJwJ8ERdknLPMO"  crossorigin="anonymous">
+
+    <link rel="stylesheet" href="style.css">
+
+    <link href="https://fonts.googleapis.com/css2?family=Inter+Tight:wght@300;400;500;700&family=Poppins:wght@400;500;700&display=swap" rel="stylesheet">
+</head>
+<body>
+<!--MENU-->
+<nav class="navbar navbar-expand-lg navbar-dark bg-dark navbar-fixed-top">
+    <img src="images/logo-ufba-compactado.png">
+    <a class="navbar-brand" href="./index.html">Jogo da Velha</a>
+    <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarNav"
+      aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
+      <span class="navbar-toggler-icon"></span>
+    </button>
+    <div class="collapse navbar-collapse" id="navbarNav">
+      <ul class="navbar-nav">
+        <li class="nav-item">
+          <a class="nav-link" href="./historia.html" data-ajax="true">História</a>
+        </li>
+        <li class="nav-item">
+          <a class="nav-link" href="./dicas_jogo.html" data-ajax="true">Dica de jogadas</a>
+        </li>
+     
+      </ul>
+    </div>
+  </nav>
+ 
+
+    <main>
+      <section>
+    <article>
+        <header> Dica de Jogadas </header>
+        <p>Reunimos um conjunto de dicas para você nunca perder no jogo da velha. As dicas foram reunidas em duas estrategias principais: Jogada Perfeira e Triangulações. No entanto, o mais importante no jogo da velha é fazer variações de forma que o seu adversário se supreenda e não consiga bloquear sua jogada de forma eficiente. Assim, você precisa saber uma grande quantidade de variações. Então, não se esqueça de vê as dicas de outros jogadores e também de adicionar a sua estrategia de jogo que faz toda a diferença</p>
+        <h5>Jogada Perfeita</h5> 
+        <p>Se os dois jogadores jogarem sempre da melhor forma, o jogo terminará sempre em empate. 
+            A lógica do jogo é muito simples, de modo que não é difícil deduzir ou decorar todas as possibilidades 
+            para efetuar a melhor jogada - apesar de o número total de possibilidades ser muito grande, a maioria delas é 
+            simétrica, além de que as regras são simples. Por esse motivo, é muito comum que o jogo empate (ou "dê velha"). 
+            Um jogador pode facilmente jogar um jogo perfeito seguindo as seguintes regras, por ordem de prioridade:</p>
+        
+       <ol> 
+       <li> Ganhar: Se você tem duas peças numa linha, ponha a terceira.</li>
+        <li> Bloquear: Se o oponente tiver duas peças em linha, ponha a terceira para bloqueá-lo.</li>
+        <li>Triângulo: Crie uma oportunidade em que você poderá ganhar de duas maneiras.</li>
+        <li> Bloquear o Triângulo do oponente:</li>
+       <ul>
+       <li> Opção 1: Crie 2 peças em linha para forçar o oponente a se defender, contanto que não resulte nele criando um triângulo ou vencendo. Por exemplo, se 'X' tem dois cantos opostos do tabuleiro e 'O' tem o centro, 'O' não pode jogar num canto (Jogar no canto nesse cenário criaria um triângulo em que 'X' vence).</li>
+       <li>Opção 2: Se existe uma configuração em que o oponente pode formar um triângulo, bloqueiem-no.</li>
+       </ul>
+       <li>Centro: Jogue no centro.</li>
+       <li>Canto vazio: jogue num canto vazio.</li>
+        <li> Em suma, a não ser em condições especiais, o jogador deve ter preferência pela posição central, seguida pelos cantos, seguidos pelas bordas.</li>
+      </ol>
+
+
+      <h5>Triangulações</h5> 
+      Como não existe estratégia vencedora no jogo da velha, conquistar um triângulo depende de um erro do adversário. Entretanto, algumas delas são definidas através de uma única jogada do adversário.
+
+
+
+
+      <h6>Triangulação através do centro</h6> 
+      <ul>
+        <li>Comece jogando no centro do tabuleiro.</li>
+        <li>Se o adversário jogar na borda, jogue no canto ao lado desta borda.</li>
+        <li>O adversário será obrigado a se defender, jogando no canto afastado.</li>
+        <li>Estabeleça o triângulo, jogando no canto ou borda alinhados ao canto conquistado.</li>
+      </ul>
+      <h6>Triangulação através do canto</h6> 
+      <ul>
+        <li>Comece pelo canto.</li>
+        <li>Se o adversário jogar numa borda, jogue no canto que obrigue o adversário a jogar em outra borda.</li>
+        <li>Quando o adversário se defender jogando na borda, conquiste o centro.</li>
+        <li>Ao conquistar o centro, o triângulo estará formado.</li>
+</ul>
+      </article>
+
+      </section>
+    <section>
+        <div class="dica">
+        <form class="dica-formulario">
+        
+            <label>Nome:</label></br>
+            <input type="text>"></br>
+            <label>Dica:</label></br>
+            <textarea></textarea></br></br>
+            <button  class="button">Envie sua dica</button>
+        </form>
+        </div>
+
+        <div><h5>Dica de jogadores</h5>
+        <div>
+            <span class="comentario-nome"><b>Elian Conceição Luz </b></span> 
+            <span class="comentario-nome"><p>Acho importante sempre iniciar pelo meio, pois assim temos mais chances de vencer</p></span>           
+        </div>
+
+        <div>
+            <span class="comentario-nome"><b>Dilminha</b></span>
+            <span class="comentario-nome"><p>Não acho que quem ganhar ou quem perder, nem quem ganhar nem perder, vai ganhar ou perder. Vai todo mundo perder</p></span>
+        </div>
+        </div>
+    </section>
+  </main>
+
+</section> 
+ <section>
+
+ </section>
+        
+    </main>
+    <footer> Trabalho desenvolvido para o componente curricular de Programação <i>Web</i> </footer>
+
+</body>
+
+</html>
